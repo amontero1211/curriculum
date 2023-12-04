@@ -1,0 +1,27 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  border-top: 5px solid #999;
+}
+.section > h3 {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 550px) {
+  .section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border-top: none;
+    margin-top: 1rem;
+  }
+  .section > h3,
+  .section > div {
+    padding-top: 1rem;
+  }
+  .section > h3 {
+    border-top: 5px solid #000;
+  }
+  .section > div {
+    border-top: 5px solid #999;
+  }
+}
